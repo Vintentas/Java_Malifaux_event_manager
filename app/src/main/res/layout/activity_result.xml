@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exampl.varvara.malifaux.Result">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/number_round"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/nowRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nowRound"
+        android:layout_alignTop="@+id/nowRound"
+        android:layout_marginLeft="5dp"
+        android:text="/"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/allRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/numberPlayers"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/namberPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="5dp"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nextRound"
+        android:text="@string/finish_round"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorBackground"/>
+
+    <ListView
+        android:id="@+id/list_players"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namberPlayers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        />
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exampl.varvara.malifaux.New_player">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:text="@string/new_player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="@string/new_player_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="@string/new_player_fraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView1"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/playerSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:inputType="textCapWords|textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/colorPrimary" />
+
+    <Spinner
+        android:id="@+id/playerFraction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/textView3"
+        android:entries="@array/fractions"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <Button
+        android:id="@+id/newPlayer"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="33dp"
+        android:onClick="addNewPlayer"
+        android:text="@string/add_new_player"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorBackground"/>
+
+    <Button
+        android:id="@+id/deletePlayer"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/newPlayer"
+        android:layout_marginEnd="10dp"
+        android:text="@string/delele_player"
+        android:onClick="deletePlayer"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorBackground"/>
+
+</RelativeLayout>

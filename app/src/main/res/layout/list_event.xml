@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    tools:context="com.exampl.varvara.malifaux.Event">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_weight="2"
+        android:gravity = "center_vertical"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/text_surname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_weight="2"
+        android:gravity = "center_vertical"
+        android:text="Surname" />
+
+    <TextView
+        android:id="@+id/text_fraction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:text="Fraction" />
+</LinearLayout>

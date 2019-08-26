@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.exampl.varvara.malifaux.PlayerResult">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points_for_victory"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/difference"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/textName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя 1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя 2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/textSurname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фамилия 1"
+        android:layout_below="@+id/textName1"
+        android:layout_alignLeft="@+id/textName1"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textSurname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фамилия 2"
+        android:layout_below="@+id/textName2"
+        android:layout_alignLeft="@+id/textName2"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <EditText
+        android:id="@+id/points1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textSurname1"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/points2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textSurname2"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/pointsFoVictory1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/points1"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/pointsFoVictory2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/points2"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <TextView
+        android:id="@+id/diff1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/pointsFoVictory1"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/diff2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/pointsFoVictory2"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <Button
+        android:id="@+id/newPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:onClick="changResult"
+        android:text="@string/chang_result"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorBackground"/>
+
+</RelativeLayout>

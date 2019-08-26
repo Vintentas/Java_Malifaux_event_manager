@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Eventfaux</string>
+    <string name="app_name_event">Новое мероприятие</string>
+    <string name="app_name_newPlayer">Игрок</string>
+    <string name="app_name_Result">Результаты</string>
+    <string name="app_name_PlayerResult">Результаты игроков</string>
+    <string name="app_name_Play">Игра</string>
+
+    <string name="welcome">Welcome to Eventfaux!</string>
+    <string name="new_event">Новое мероприятие</string>
+    <string name="continue_event">Продолжить мероприятие</string>
+    <string name="no_event">Нет мероприятия</string>
+
+    <string name="yes_event">Мероприятие уже существует. Создать новое?</string>
+
+    <string name="add_new_player">Добавить игрока</string>
+    <string name="delele_player">Удалить игрока</string>
+    <string name="chang_player">Изменить игрока</string>
+    <string name="cancel_player">Отмена</string>
+
+    <string name="go">Начать мероприятие</string>
+    <string name="round">Количество раундов</string>
+    <string name="numberPlayers">Количество игроков</string>
+    <string-array name="rounds">
+        <item>3 (от 4 игроков)</item>
+        <item>4 (от 9 игроков)</item>
+        <item>5 (от 16 игроков)</item>
+    </string-array>
+    <string name="not_enough_players_1">Участников должно быть не менее 4 человек.</string>
+    <string name="not_enough_players_2">Участников должно быть не менее 9 человек.</string>
+    <string name="not_enough_players_3">Участников должно быть не менее 16 человек.</string>
+
+    <string name="new_player_name">Имя</string>
+    <string name="new_player_surname">Фамилия</string>
+    <string name="new_player_fraction">Фракция</string>
+    <string-array name="fractions">
+        <item>The Guild</item>
+        <item>Resurrectionists</item>
+        <item>Neverborn</item>
+        <item>Arcanists</item>
+        <item>Outcasts</item>
+        <item>Ten Thunders</item>
+        <item>Gremlins</item>
+    </string-array>
+    <string name="not_name">Не указано имя.</string>
+
+    <string name="number_round">Раунд</string>
+    <string name="finish_round">Завершить раунд</string>
+
+    <string name="points">Счет</string>
+    <string name="points_for_victory">Очки за победу</string>
+    <string name="difference">Разница</string>
+    <string name="chang_result">Добавить/изменить результат</string>
+    <string name="bye">Автопобеда</string>
+
+    <string name="next_round">Следующий раунд</string>
+    <string name="finish_event">Завершить турнир</string>
+    <string name="delele">Удалить игрока?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+</resources>
